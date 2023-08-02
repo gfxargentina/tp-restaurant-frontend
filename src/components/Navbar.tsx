@@ -1,7 +1,18 @@
 import React from 'react';
+import Menu from './Menu';
+import Link from 'next/link';
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <div className=" h-12 text-red-500 p-4 flex justify-between items-center border-b-2 border-b-red-500 ">
+      <div className="text-xl">
+        <Link href="/">PizzaRest</Link>
+      </div>
+      <div>
+        <Menu />
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
