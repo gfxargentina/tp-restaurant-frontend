@@ -5,7 +5,7 @@ import Image from 'next/image';
 import CartIcon from './CartIcon';
 
 const Navbar = () => {
-  const user = false;
+  const user = true;
 
   return (
     <div className=" h-12 text-red-500 p-4 flex justify-between items-center border-b-2 border-b-red-500 md:h-24 lg:px-20 xl:px-40">
