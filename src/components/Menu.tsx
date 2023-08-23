@@ -16,7 +16,7 @@ const Menu = () => {
   const [open, setOpen] = useState(false);
 
   //usuario temporario
-  const user = true;
+  const user = false;
 
   return (
     <div>
