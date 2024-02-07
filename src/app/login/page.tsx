@@ -2,12 +2,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { useSession } from 'next-auth/react';
-import { signIn } from 'next-auth/react';
+import { useSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 const Login = () => {
   const { data, status } = useSession();
+  //const session = await auth();
   const router = useRouter();
 
   if (status === 'loading') {
